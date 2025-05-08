@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"math"
+
+	"github.com/LexusEgorov/mymath"
 )
 
 const PI = 3.141592
@@ -40,4 +42,6 @@ func main() {
 
 		areas = append(areas, area)
 	}
+
+	fmt.Printf("Avg area: %.2f", mymath.Average(areas))
 }
